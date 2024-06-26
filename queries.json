@@ -1,0 +1,106 @@
+{
+    "intents": [
+        {
+            "tag": "cold",
+            "patterns": [
+                "runny nose", 
+                "tickly throat", 
+                "sneezing", 
+                "watering eyes", 
+                "low-grade fever", 
+                "sore throat", 
+                "mild cough", 
+                "achy muscles and bones", 
+                "headache"
+            ],
+            "responses": {
+                "runny nose": "common cold",
+                "tickly throat": "common cold",
+                "sneezing": "common cold",
+                "watering eyes": "common cold",
+                "low-grade fever": "mild cold",
+                "sore throat": "common cold",
+                "mild cough": "mild cold",
+                "achy muscles and bones": "flu",
+                "headache": "flu"
+            }
+        },
+        {
+            "tag": "migraine",
+            "patterns": [
+                "severe headache", 
+                "stressful eyes", 
+                "stress in the nerves", 
+                "blurry vision", 
+                "sound and light sensitive", 
+                "vomiting", 
+                "head pounding and throbbing", 
+                "sinus pressure"
+            ],
+            "responses": {
+                "severe headache": "migraine",
+                "stressful eyes": "stress",
+                "stress in the nerves": "stress",
+                "blurry vision": "migraine",
+                "sound/light sensitive": "migraine",
+                "vomiting": "migraine",
+                "head pounding and throbbing": "migraine",
+                "sinus pressure": "sinus"
+            }
+        },
+        {
+            "tag": "stomach_issues",
+            "patterns": [
+                "stomach ache",
+                "nausea",
+                "vomiting",
+                "diarrhea",
+                "bloating",
+                "cramps",
+                "abdominal pain"
+            ],
+            "responses": {
+                "stomach ache": "indigestion or a stomach bug",
+                "nausea": "indigestion",
+                "vomiting": "food poisoning",
+                "diarrhea": "stomach bug or food poisoning",
+                "bloating": "indigestion or gas",
+                "cramps": "menstrual cramps or indigestion",
+                "abdominal pain": "gas"
+            }
+        },
+        {
+            "tag": "allergies",
+            "patterns": [
+                "itchy eyes",
+                "sneezing",
+                "runny nose",
+                "rash",
+                "hives",
+                "swelling",
+                "itchy throat",
+                "watery eyes"
+            ],
+            "responses": {
+                "allergies"
+            }
+        },
+        {
+            "tag": "mental_health",
+            "patterns": [
+                "feeling sad",
+                "anxiety",
+                "lack of sleep",
+                "feeling stressed",
+                "panic attacks"
+            ],
+            "responses": {
+                "feeling sad": "depression",
+                "anxiety": "anxiety attack",
+                "lack of sleep": "insomnia or anxiety",
+                "feeling stressed": "stress",
+                "panic attacks": "intense anxiety and fear",
+            }
+        }
+    ]
+}
